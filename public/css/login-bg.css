@@ -1,0 +1,16 @@
+/* Fond image pleine page pour les écrans d'auth Filament */
+body {
+  background: url("/images/hero.jpg") center / cover fixed no-repeat !important;
+  background-color: #0b1220 !important; /* fallback si l'image ne charge pas */
+}
+
+/* Lisibilité du formulaire sur l'image (glass) */
+.fi-auth-card .fi-card,
+.fi-section > div,
+.fi-simple main > div {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+}
